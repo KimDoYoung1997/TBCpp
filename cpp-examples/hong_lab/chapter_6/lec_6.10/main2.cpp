@@ -26,7 +26,7 @@ int main()
     cout <<"8. static_cast<void*>(&c) : " << static_cast<void*>(&c) << endl; //0x7ffd9548bb5f
     cout <<"9. *(char*)(static_cast<void*>(&c)) : " << *(char*)(static_cast<void*>(&c)) << endl; //Q
 
-    // 1. int_arr :     0x7ffd967b4ca0
+    // 1. int_arr : 0x7ffd967b4ca0
     // 2. char_arr : Hello, World!
     // 3. name :  Jack Jack
     // 4. name2 :  Hello, World!
