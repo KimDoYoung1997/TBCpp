@@ -14,6 +14,7 @@ int main()
         cout << ptr << endl;
 
         //delete ptr;
+        //cout << " hi " << endl;
     }
 
     return 0;
