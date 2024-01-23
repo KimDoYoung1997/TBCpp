@@ -18,7 +18,7 @@ void foo(int *arr, int length)
 
 
 int main()
-{
+{   
 
     int arr[] = {5,4,3,2,1};
 
