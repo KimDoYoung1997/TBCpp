@@ -1,0 +1,5 @@
+// compile and linking
+$ g++ main.cpp Calc.cpp -o combined
+
+// execute code
+$ ./combined
