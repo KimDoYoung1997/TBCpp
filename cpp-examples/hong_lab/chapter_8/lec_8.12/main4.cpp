@@ -6,28 +6,38 @@
 
 using namespace std;
 
-class B; //forward declaration
-
-class A
-{
-private:
-    int m_value = 1;
-
-    //friend class B; // B 클래스에게 friend를 통째로 개방하는건 부담스러우니, B의 doSomething 멤버함수에게만 friend를 열어두고싶다면?
-    friend void B::doSomething (A &a );
-};
+class A; //forward declaration
 
 class B
 {
 private:
     int m_value = 2;
 public:
-    void doSomething (A &a )
-    {
-        cout <<a.m_value << endl; 
-    }
+    void doSomething (A &a );
+
+    // void doSomething (A &a )
+    // {
+    //     cout <<a.m_value << endl; 
+    // }
 
 };
+
+
+class A
+{
+private:
+    int m_value = 1;
+    friend void B::doSomething(A &a); // 특정 멤버함수에게만 friend 선언을 하고싶을때.
+
+
+};
+
+
+
+void B::doSomething (A &a)
+{
+    cout <<a.m_value << endl; 
+}
 
 
 
