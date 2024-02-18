@@ -33,7 +33,6 @@ public:
     friend bool operator <=(const Cents&c1, const Cents&c2);
 
 
-
 };
 
 
