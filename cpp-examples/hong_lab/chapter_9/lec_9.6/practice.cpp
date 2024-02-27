@@ -17,7 +17,7 @@ public:
 
     int & operator[](int index) // 반환형이 & 참조형
     {
-        if( (index<0) || (index>arrlen) )
+        if( (index<0) || (index>arrlen) ) // 참고로 이렇게 if로 배열의 범위를 벗어난 원소 접근에 대한 방지보단, assert를  사용하는것이 더 효율적이다. 이는 main3.cpp를 참고하면 된다.
         {
             cout <<"Array index out of bound exception" << endl;
             exit(1);
