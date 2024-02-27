@@ -1,4 +1,5 @@
 // 복사 생성자, 복사 초기화 반환값 최적화, RVO(Return Value Optimization)
+// https://chat.openai.com/share/02d42bc2-02b7-4c16-ae90-65691048406c
 #include <iostream>
 #include <cassert>
 #include <ostream>
