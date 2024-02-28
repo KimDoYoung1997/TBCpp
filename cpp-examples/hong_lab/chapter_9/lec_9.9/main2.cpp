@@ -35,14 +35,14 @@ int Fraction::num=0;
 Fraction doSomething()
 {
     Fraction temp(1,2);
-    cout <<&temp << endl;
+    cout <<&temp << endl; // 0x7ffe7fefcef0
     return temp;
 }
 
 int main()
 {
     Fraction result = doSomething(); // 이번에도 복사 생성자가 호출되지 않음. 컴파일러가 자동으로 막아준듯.
-    cout << result << endl;  // 0x7ffe7fefcef0
+    cout << result << endl;  
     cout << &result << endl; // 0x7ffe7fefcef0  서로 주소가 같음. Return Value Optimization이 된거라고 해석하면 될듯
     return 0;
 }
