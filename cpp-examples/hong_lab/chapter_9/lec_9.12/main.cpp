@@ -1,3 +1,9 @@
+//이니셜라이저 리스트 (Initializer_list)
+/*
+기본 자료형으로 array를 만들때는 이니셜라이저 리스트를 만들어서 값을 편하게 초기화 할 수 있었다.
+이번에는 클래스같은 사용자 정의 자료형에서 생성자나 대입 연산자를 만들때 편하게 사용할 수 있는 이니셜라이저리스트 사용법을 알아보자.
+*/
+
 #include <iostream>
 #include <cassert>
 #include <initializer_list> // 이번 시간에 배울 내용
