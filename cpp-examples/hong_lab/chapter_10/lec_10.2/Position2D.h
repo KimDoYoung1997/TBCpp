@@ -1,6 +1,18 @@
 #pragma once
 // #include "Monster.h"
 #include <iostream>
+
+/*
+Position2D class의 특성은 다음과 같다.
+<멤버변수>
+    1. 몬스터의 x위치
+    2. 몬스터의 y위치
+<멤버함수>
+    1. set 오버로딩함수 2개
+    2. get 함수
+<오버로딩>
+    1. operator<<
+*/
 class Position2D
 {
 private:
