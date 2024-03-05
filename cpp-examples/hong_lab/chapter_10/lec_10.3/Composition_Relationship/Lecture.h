@@ -32,7 +32,13 @@ public:
 
     void registerStudent(const Student& student_in)
     {
-        students.push_back(student_in);
+        //students 벡터의 0번째 원소의 주소값인 &students[0] 과 student_in 의 주소값은 서로 다르다. vector가 push back을 하면 복사하기 때문. 
+        //students.push_back(student_in);
+        /*
+        push_back 메서드는 벡터의 끝에 새 요소를 추가합니다. 만약 추가하는 요소(student_in 인스턴스)가 L-value라면, push_back은 해당 요소의 복사본을 만들어 벡터의 끝에 저장합니다. 
+        따라서, 원본 객체(student_in)와 벡터 내에 저장된 객체의 메모리 주소는 서로 다릅니다.
+        */
+        
     }
 
     void study()
