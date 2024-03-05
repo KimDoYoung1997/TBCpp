@@ -19,7 +19,10 @@ private:
 public:
     Monster(const std::string name_in,const Position2D& pos_in)
     :m_name(name_in), m_location(pos_in)
-    {}
+    {
+        // std:: cout <<&pos_in << std::endl;
+        // std:: cout <<&m_location << std::endl;
+    }
 
     void moveTo(const Position2D &pos_target)
     {
