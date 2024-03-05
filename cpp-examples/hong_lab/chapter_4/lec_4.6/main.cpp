@@ -27,5 +27,8 @@ int main()
     string c(a+b);
     cout << c.length() << endl;
 
+    c+="Im tired"; // null 제외 8
+    cout <<c << endl;
+    cout <<c.length() <<endl;
     return 0;
 }
