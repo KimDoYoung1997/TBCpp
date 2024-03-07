@@ -34,6 +34,7 @@ public:
             std::cout<<"teacher should be 1"<< std::endl;
             exit(1);
         }
+        //얕은 복사
         teacher_ptr = new Teacher(teacher);
 
         
@@ -62,6 +63,8 @@ public:
     {
         //std::cout << "Lecture 소멸" << std::endl;
         delete teacher_ptr;
+        teacher_ptr = nullptr;
+        std::cout <<"teacher_ptr 포인터 delete완료" <<std::endl;
     }
 
     // 출력 연산자 오버로딩: Lecture 객체의 정보를 출력

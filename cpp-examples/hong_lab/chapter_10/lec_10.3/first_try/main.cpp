@@ -15,6 +15,8 @@ int main()
 {
     // Composition Relationship 
     Teacher teach1("hong");
+
+    // Lecture class을 바탕으로 lec1 object 생성
     Lecture lec1("Introduction to Computer Programming");
     lec1.assignTeacher(Teacher("Prof. Hong"));
     lec1.registerStudent(  Student("Jack Jack",0));
