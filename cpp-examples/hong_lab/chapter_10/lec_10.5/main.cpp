@@ -5,11 +5,12 @@
 의존관계는 굉장히 많이 쓰이므로 더 주의깊게 보자.
 */
 
-#include <bits/types/clock_t.h>
-#include <bits/types/timer_t.h>
-#include <iostream>
-#include <chrono>
-#include <ratio>
+// #include <bits/types/clock_t.h>
+// #include <bits/types/timer_t.h>
+// #include <iostream>
+// #include <chrono>
+// #include <ratio>
+
 #include "Worker.h"
 
 int main()
