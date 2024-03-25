@@ -1,0 +1,1 @@
+g++ main3.cpp Cents.cpp -o main3
