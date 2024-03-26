@@ -1,0 +1,7 @@
+g++ -c main3.cpp Cents.cpp 
+g++ main.cpp Cents.o -shared -o lib_dynamic.so
+g++ main3.o -L. lib_dynamic.so -o main3
+ldd main3
+export LD_LIBRARY_PATH=/home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.1
+ldd main3
+./main3
