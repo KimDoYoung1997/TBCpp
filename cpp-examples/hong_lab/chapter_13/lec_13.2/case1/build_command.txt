@@ -1,0 +1,1 @@
+g++ main.cpp MyArray.cpp -o main
