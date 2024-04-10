@@ -52,3 +52,5 @@ void MyArray<T>::print()
 //template void MyArray<int>::print();
 
 template class MyArray<int>;	// 해당 부분을 통해 explicit instanciation이  발동되고, 헤더와 cpp변환이 가능해진다.
+template class MyArray<double>;	// 해당 부분을 통해 explicit instanciation이  발동되고, 헤더와 cpp변환이 가능해진다.
+template class MyArray<char>;	// 해당 부분을 통해 explicit instanciation이  발동되고, 헤더와 cpp변환이 가능해진다.

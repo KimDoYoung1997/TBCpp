@@ -1,0 +1,2 @@
+/usr/bin/ar qc libPointTemplate.a CMakeFiles/PointTemplate.dir/PointTemplate.cpp.o
+/usr/bin/ranlib libPointTemplate.a

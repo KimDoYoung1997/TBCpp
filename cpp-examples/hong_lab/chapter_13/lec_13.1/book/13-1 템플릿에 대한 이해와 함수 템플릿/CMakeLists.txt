@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.13)
+
+project(book_13.1)
+
+add_executable(TwoTypeAddFunction TwoTypeAddFunction.cpp)
+add_executable(AddFunctionTemplate AddFunctionTemplate.cpp)
+add_executable(PrimitiveFunctionTemplate PrimitiveFunctionTemplate.cpp)
+add_executable(NeedSpecialFunctionTemplate NeedSpecialFunctionTemplate.cpp)
+add_executable(SpecialFunctionTemplate SpecialFunctionTemplate.cpp)

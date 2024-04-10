@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main2.dir/main2.cpp.o -o main2   -L/home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.2/case2/build  -Wl,-rpath,/home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.2/case2/build libMyArray.a 

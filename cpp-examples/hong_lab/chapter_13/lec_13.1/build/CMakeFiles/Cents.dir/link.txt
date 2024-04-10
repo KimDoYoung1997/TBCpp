@@ -1,0 +1,2 @@
+/usr/bin/ar qc libCents.a CMakeFiles/Cents.dir/Cents.cpp.o
+/usr/bin/ranlib libCents.a

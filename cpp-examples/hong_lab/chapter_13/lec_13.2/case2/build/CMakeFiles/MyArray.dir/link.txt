@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMyArray.a CMakeFiles/MyArray.dir/MyArray.cpp.o
+/usr/bin/ranlib libMyArray.a
