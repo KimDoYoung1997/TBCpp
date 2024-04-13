@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4
+CMAKE_SOURCE_DIR = /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build
+CMAKE_BINARY_DIR = /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build/CMakeFiles /home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build/CMakeFiles /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,56 @@ main2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
 .PHONY : main2/fast
 
+#=============================================================================
+# Target rules for targets named main3
+
+# Build rule for target.
+main3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main3
+.PHONY : main3
+
+# fast build rule for target.
+main3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/build
+.PHONY : main3/fast
+
+#=============================================================================
+# Target rules for targets named Storage
+
+# Build rule for target.
+Storage: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Storage
+.PHONY : Storage
+
+# fast build rule for target.
+Storage/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Storage.dir/build.make CMakeFiles/Storage.dir/build
+.PHONY : Storage/fast
+
+Storage.o: Storage.cpp.o
+.PHONY : Storage.o
+
+# target to build an object file
+Storage.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Storage.dir/build.make CMakeFiles/Storage.dir/Storage.cpp.o
+.PHONY : Storage.cpp.o
+
+Storage.i: Storage.cpp.i
+.PHONY : Storage.i
+
+# target to preprocess a source file
+Storage.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Storage.dir/build.make CMakeFiles/Storage.dir/Storage.cpp.i
+.PHONY : Storage.cpp.i
+
+Storage.s: Storage.cpp.s
+.PHONY : Storage.s
+
+# target to generate assembly for a file
+Storage.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Storage.dir/build.make CMakeFiles/Storage.dir/Storage.cpp.s
+.PHONY : Storage.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -172,6 +222,7 @@ main2.o: main2.cpp.o
 # target to build an object file
 main2.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main2.cpp.o
 .PHONY : main2.cpp.o
 
 main2.i: main2.cpp.i
@@ -180,6 +231,7 @@ main2.i: main2.cpp.i
 # target to preprocess a source file
 main2.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main2.cpp.i
 .PHONY : main2.cpp.i
 
 main2.s: main2.cpp.s
@@ -188,6 +240,7 @@ main2.s: main2.cpp.s
 # target to generate assembly for a file
 main2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main2.cpp.s
 .PHONY : main2.cpp.s
 
 # Help Target
@@ -198,8 +251,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Storage"
 	@echo "... main"
 	@echo "... main2"
+	@echo "... main3"
+	@echo "... Storage.o"
+	@echo "... Storage.i"
+	@echo "... Storage.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

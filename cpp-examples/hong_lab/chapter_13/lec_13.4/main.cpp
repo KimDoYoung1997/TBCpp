@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Storage.h"
 
 using namespace std;
 
@@ -18,8 +17,8 @@ char getMax(char x,char y)
 
 int main()
 {
-    cout <<getMax(1,2) << endl;
-    cout <<getMax('a','b') << endl;
+    cout <<getMax<int>(1,2) << endl;
+    cout <<getMax<char>('a','b') << endl;
 
     
     return 0;

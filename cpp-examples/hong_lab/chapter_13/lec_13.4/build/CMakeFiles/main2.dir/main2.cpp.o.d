@@ -1,5 +1,5 @@
 CMakeFiles/main2.dir/main2.cpp.o: \
- /home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/main2.cpp \
+ /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/main2.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -146,4 +146,4 @@ CMakeFiles/main2.dir/main2.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/keti/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/Storage.h
+ /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/Storage2.h

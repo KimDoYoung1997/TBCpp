@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main3.dir/main2.cpp.o -o main3   -L/home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build  -Wl,-rpath,/home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_13/lec_13.4/build libStorage.a 
