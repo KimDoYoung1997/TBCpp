@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.1/include/AutoPtr.h
+iostream
+-
+
+/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.1/include/Resource.h
+iostream
+-
+
+/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.1/main2.cpp
+ios
+-
+iostream
+-
+include/Resource.h
+/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.1/include/Resource.h
+include/AutoPtr.h
+/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.1/include/AutoPtr.h
+
