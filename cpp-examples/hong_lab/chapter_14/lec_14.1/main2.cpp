@@ -17,6 +17,7 @@ int main()
 
     try // 문제가 생길 여지가 있는 부분을 try 부분에 집어넣는다.
     {
+        throw -1;
         if (x < 0.0) throw std::string("Negative Input!"); // 문제가 발생하는 특정 부분을 throw로 보낸다.
         cout << std::sqrt(x) << std::endl;
     }
@@ -24,6 +25,9 @@ int main()
     {
         std::cerr<<error_message << std::endl; // throw로 보낸 문제가 발생하는 특정 부분을 catch에서 처리한다.
     }
-
+    catch(int num)
+    {
+        std::cerr<<num << std::endl; // throw로 보낸 문제가 발생하는 특정 부분을 catch에서 처리한다.
+    }
     return 0;
 }
