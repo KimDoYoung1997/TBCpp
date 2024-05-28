@@ -10,11 +10,13 @@ public:
     T *m_ptr = nullptr;
 
 public:
+    //기본 생성자
     AutoPtr(T *ptr=nullptr):m_ptr(ptr)
     {
         std::cout <<"AutoPtr Constructor" <<std::endl;
     }
-    AutoPtr( AutoPtr& copy)
+    //복사 생성자
+    AutoPtr(const AutoPtr& copy)
     {
         m_ptr = copy.m_ptr;
         copy.m_ptr = nullptr;
