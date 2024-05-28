@@ -13,11 +13,21 @@ add_executable(main2 main2.cpp)
 
 add_library(Resource Resource.cpp)
 
-# include 디렉토리를 main 타겟과 Resource 타겟에 추가합니다.
-target_include_directories(main PRIVATE ${INCLUDE_DIR})
-target_include_directories(main2 PRIVATE ${INCLUDE_DIR})
+# # include 디렉토리를 main 타겟과 Resource 타겟에 추가합니다.
+# target_include_directories(main PRIVATE ${INCLUDE_DIR})
+# target_include_directories(main2 PRIVATE ${INCLUDE_DIR})
 
-target_include_directories(Resource PRIVATE ${INCLUDE_DIR})
+# target_include_directories(Resource PRIVATE ${INCLUDE_DIR})
+
+
+# 타겟 리스트를 만듭니다.
+set(TARGETS main main2 Resource)
+
+# 타겟 리스트를 순회하며 include 디렉토리를 추가합니다.
+foreach(TARGET ${TARGETS})
+    target_include_directories(${TARGET} PRIVATE ${INCLUDE_DIR})
+endforeach()
+
 
 # main 타겟에 Resource 라이브러리를 링크합니다.
 target_link_libraries(main Resource)
