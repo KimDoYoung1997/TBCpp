@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Resource
-
-# Build rule for target.
-Resource: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Resource
-.PHONY : Resource
-
-# fast build rule for target.
-Resource/fast:
-	$(MAKE) -f CMakeFiles/Resource.dir/build.make CMakeFiles/Resource.dir/build
-.PHONY : Resource/fast
-
-#=============================================================================
 # Target rules for targets named main2
 
 # Build rule for target.
@@ -148,6 +135,19 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named Resource
+
+# Build rule for target.
+Resource: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Resource
+.PHONY : Resource
+
+# fast build rule for target.
+Resource/fast:
+	$(MAKE) -f CMakeFiles/Resource.dir/build.make CMakeFiles/Resource.dir/build
+.PHONY : Resource/fast
 
 Resource.o: Resource.cpp.o
 
@@ -238,9 +238,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Resource"
 	@echo "... main2"
 	@echo "... main"
+	@echo "... Resource"
 	@echo "... Resource.o"
 	@echo "... Resource.i"
 	@echo "... Resource.s"

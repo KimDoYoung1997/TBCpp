@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/include 
+CXX_INCLUDES = 
 
