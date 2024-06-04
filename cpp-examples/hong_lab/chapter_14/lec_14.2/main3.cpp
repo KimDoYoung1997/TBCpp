@@ -69,7 +69,7 @@ int main()
     }
     catch (int) // 실패
     {
-        cerr<<"main caught int exception"<<endl; //마지막까지 catch하지 못해서 런타임 에러 발생
+        cerr<<"main caught int exception"<<endl; //마지막까지 catch하지 못해서 런타임 에러 발생   terminate called after throwing an instance of 'char'
     }
 
     cout <<"main loop End" << endl; // 여기가 실행이 안 됨!
