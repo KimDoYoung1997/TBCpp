@@ -21,9 +21,9 @@ int main()
         MyArray my_arr;
         my_arr[-2];
     }
-    catch(const int&x)  //멤버 함수 안에서도 throw 한 것을 main loop에서 catch
+    catch(const int &x)  //멤버 함수 안에서도 throw 한 것을 main loop에서 catch
     {
-        cerr <<"array out or range! " <<x<< endl;
+        cerr <<"array out or range! " <<x<<" is not available"<< endl;
     }
     return 0;
 }
