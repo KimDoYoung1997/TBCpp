@@ -4,7 +4,7 @@
 #include <string>
 using namespace std; 
 
-
+// std::exception 을 상속하여 만든 커스텀 클래스를 예외클래스로 만들 수 있다.
 // https://en.cppreference.com/w/cpp/error/exception/what
 class CustomException : public std::exception
 {
@@ -33,6 +33,13 @@ int main()
     catch (CustomException & except) 
     {
         std::cout <<"catch (CustomException & except) "<<endl;
+        std::cout<< typeid(except).name()<<endl;;
+        std::cerr << except.what() << endl;
+    }
+
+    catch (std::exception & except) 
+    {
+        std::cout <<"catch (std::exception & except)  "<<endl;
         std::cout<< typeid(except).name()<<endl;;
         std::cerr << except.what() << endl;
     }

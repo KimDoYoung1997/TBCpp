@@ -5,6 +5,8 @@
 using namespace std;
 
 /*
+상속관계는 아래와 같다. 
+
 std::exception
        |
 CustomException
@@ -28,7 +30,7 @@ private:
 public:
     MyRuntimeError(const std::string& message) : m_message(message) {}
 
-    const char* what() const noexcept override
+    const char* what() const noexcept override  // 적어도 what() 메서드에서는 exception을 throw 하지 않겠다는 의미로 noexcept 키워드를 사용함
     {
         return m_message.c_str();
     }

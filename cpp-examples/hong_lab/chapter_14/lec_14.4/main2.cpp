@@ -17,7 +17,12 @@ int main()
         throw std::runtime_error("Bad thing happened.");    //runtime_error 클래스 또한 exception클래스의 자식 클래스이다.
     } 
     
-
+    catch (std::runtime_error & except) // runtime_error 클래스는 exception클래스의 자식 클래스이다.  
+    {
+        std::cout <<"catch (std::runtime_error & except)"<<endl;
+        std::cout<< typeid(except).name()<<endl;;
+        std::cerr << except.what() << endl;
+    }
 
     catch (std::exception & except) 
     {
