@@ -17,9 +17,13 @@ iostream
 /home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/include/Timer.h
 iostream
 -
-chrono
+vector
 -
-ratio
+algorithm
+-
+random
+-
+chrono
 -
 
 /home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/main2.cpp

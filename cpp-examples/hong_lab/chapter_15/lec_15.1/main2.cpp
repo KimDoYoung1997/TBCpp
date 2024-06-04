@@ -23,7 +23,7 @@ int main()
     cout <<"res2.isNull() " << res2.isNull() <<endl;
 
     cout <<"=========== Step 2 대입 연산(res2 = res1) 실행 ==========="<<endl;
-    res2 = res1;    // move semantics // res2의 기본 대입 연산자 호출
+    res2 = res1;    // move semantics // res2의 대입 연산자 호출
     cout <<"res1.m_ptr 주소 "<< res1.m_ptr << endl;
     cout <<"res2.m_ptr 주소 "<< res2.m_ptr << endl;
     cout <<"res1.m_ptr == res2.m_ptr : " << (res1.m_ptr == res2.m_ptr) <<endl;
