@@ -11,7 +11,7 @@ int findFirstChar(const char* string, char ch)
     {
         if(string[index]==ch)
         {
-            std::cout <<"find!"<<ch <<std::endl;
+            std::cout <<"find! : "<<ch <<std::endl;
             return index;
         }
     }
@@ -32,7 +32,10 @@ double divide(int x , int y , bool &success)
 
 int main()
 {
-    findFirstChar("const char *string", 'x');
+    std::cout << findFirstChar("const char *string", 'x') <<std::endl;
+    std::cout << findFirstChar("const char *string x", 'x') <<std::endl;
+    
+    std::cout <<"=========================================" <<std::endl;
     bool flag = false;
     double divide_return=divide(3, 2, flag);
     if (flag == true) std::cout <<divide_return << std::endl;
