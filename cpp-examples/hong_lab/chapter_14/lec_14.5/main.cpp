@@ -1,5 +1,10 @@
 #include <iostream>
-
+/*
+상속관계는 아래와 같다. 
+       A
+       |
+       B
+*/
 class A 
 {
 public:
