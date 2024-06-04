@@ -14,7 +14,7 @@ class A
 public:
     ~A()
     {
-        std::cout <<"A is destructed"<<std::endl;
+        std::cout <<"A is destructed"<<std::endl;   //  클래스의 소멸자에서 throw하는 행위는 "금기시" 되는 행위이다.
         throw "error";  // 런타임 에러
     }
 };
