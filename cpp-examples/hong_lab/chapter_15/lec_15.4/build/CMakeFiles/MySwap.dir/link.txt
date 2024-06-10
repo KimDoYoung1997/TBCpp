@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMySwap.a  CMakeFiles/MySwap.dir/MySwap.cpp.o
+/usr/bin/ranlib libMySwap.a
