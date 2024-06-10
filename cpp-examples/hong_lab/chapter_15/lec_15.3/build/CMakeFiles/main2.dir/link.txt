@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/main2.dir/main2.cpp.o  -o main2  libResource.a 
+/usr/bin/c++     CMakeFiles/main2.dir/main2.cpp.o  -o main2  libResource2.a 

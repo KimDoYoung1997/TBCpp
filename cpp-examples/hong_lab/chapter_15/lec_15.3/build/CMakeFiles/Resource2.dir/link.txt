@@ -1,0 +1,2 @@
+/usr/bin/ar qc libResource2.a  CMakeFiles/Resource2.dir/Resource2.cpp.o
+/usr/bin/ranlib libResource2.a

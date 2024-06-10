@@ -25,6 +25,12 @@ public:
         std::cout <<"AutoPtr copy constructor end"<<std::endl;
     }
 
+    // AutoPtr(AutoPtr&& a):m_ptr(a.m_ptr)
+    // {
+    //     std::cout<<"AutoPtr move constructor"<<std::endl;
+    //     a.m_ptr = nullptr;  // 소유권 이전하므로 deep-copy 수행하지 않음
+    // }
+
     AutoPtr& operator=(const AutoPtr& copy)
     {
         std::cout<<"AutoPtr copy assignment 1"<<std::endl;
@@ -52,6 +58,28 @@ public:
 
         return *this;   // 여길 깜빡했네.. return값을 안 주다니..
     }
+    // AutoPtr& operator=(AutoPtr&& a)
+    // {
+    //     std::cout <<"AutoPtr move assignment" << std::endl;
+    //     if(this == &a)
+    //     {
+    //         return *this;
+    //     }
+    //     if(this->m_ptr!=nullptr)
+    //     {
+    //         std::cout<<"delete existing Resource class in AutoPtr"<<std::endl;
+    //         delete m_ptr;
+    //     }
+
+    //     //shallow copy
+    //     m_ptr = a.m_ptr;
+    //     a.m_ptr = nullptr;
+    //     return *this;
+    // }
+
+
+
+
     ~AutoPtr()
     {
         std::cout<<"AutoPtr destructor"<<std::endl;

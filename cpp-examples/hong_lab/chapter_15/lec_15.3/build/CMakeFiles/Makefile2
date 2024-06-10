@@ -54,7 +54,9 @@ CMAKE_BINARY_DIR = /home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_
 
 # The main recursive "all" target.
 all: CMakeFiles/main2.dir/all
+all: CMakeFiles/main1.dir/all
 all: CMakeFiles/main.dir/all
+all: CMakeFiles/Resource2.dir/all
 all: CMakeFiles/Resource.dir/all
 
 .PHONY : all
@@ -66,7 +68,9 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/main2.dir/clean
+clean: CMakeFiles/main1.dir/clean
 clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/Resource2.dir/clean
 clean: CMakeFiles/Resource.dir/clean
 
 .PHONY : clean
@@ -75,10 +79,10 @@ clean: CMakeFiles/Resource.dir/clean
 # Target rules for target CMakeFiles/main2.dir
 
 # All Build rule for target.
-CMakeFiles/main2.dir/all: CMakeFiles/Resource.dir/all
+CMakeFiles/main2.dir/all: CMakeFiles/Resource2.dir/all
 	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/depend
 	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles --progress-num=5,6 "Built target main2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles --progress-num=9,10 "Built target main2"
 .PHONY : CMakeFiles/main2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,13 +103,40 @@ CMakeFiles/main2.dir/clean:
 .PHONY : CMakeFiles/main2.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/main1.dir
+
+# All Build rule for target.
+CMakeFiles/main1.dir/all: CMakeFiles/Resource.dir/all
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/depend
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles --progress-num=7,8 "Built target main1"
+.PHONY : CMakeFiles/main1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/main1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles 0
+.PHONY : CMakeFiles/main1.dir/rule
+
+# Convenience name for target.
+main1: CMakeFiles/main1.dir/rule
+
+.PHONY : main1
+
+# clean rule for target.
+CMakeFiles/main1.dir/clean:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/clean
+.PHONY : CMakeFiles/main1.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
 CMakeFiles/main.dir/all: CMakeFiles/Resource.dir/all
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles --progress-num=3,4 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles --progress-num=5,6 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -124,6 +155,33 @@ main: CMakeFiles/main.dir/rule
 CMakeFiles/main.dir/clean:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
 .PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Resource2.dir
+
+# All Build rule for target.
+CMakeFiles/Resource2.dir/all:
+	$(MAKE) -f CMakeFiles/Resource2.dir/build.make CMakeFiles/Resource2.dir/depend
+	$(MAKE) -f CMakeFiles/Resource2.dir/build.make CMakeFiles/Resource2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles --progress-num=3,4 "Built target Resource2"
+.PHONY : CMakeFiles/Resource2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Resource2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Resource2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles 0
+.PHONY : CMakeFiles/Resource2.dir/rule
+
+# Convenience name for target.
+Resource2: CMakeFiles/Resource2.dir/rule
+
+.PHONY : Resource2
+
+# clean rule for target.
+CMakeFiles/Resource2.dir/clean:
+	$(MAKE) -f CMakeFiles/Resource2.dir/build.make CMakeFiles/Resource2.dir/clean
+.PHONY : CMakeFiles/Resource2.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Resource.dir

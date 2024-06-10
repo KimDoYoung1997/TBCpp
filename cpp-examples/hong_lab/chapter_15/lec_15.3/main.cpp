@@ -1,11 +1,11 @@
 #include <iostream>
 #include "include/Timer.h"
 #include "include/Resource.h"
-#include "include/AutoPtr.h"
+#include "include/AutoPtr.h"    // copy constructor 와 copy assignment 구현
 
 AutoPtr<Resource> generateResource()
 {
-    AutoPtr<Resource> res(new Resource(1000000));
+    AutoPtr<Resource> res(new Resource(10000));
     return res;
 }
 

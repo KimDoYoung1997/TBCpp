@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -124,6 +124,19 @@ main2/fast:
 .PHONY : main2/fast
 
 #=============================================================================
+# Target rules for targets named main1
+
+# Build rule for target.
+main1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main1
+.PHONY : main1
+
+# fast build rule for target.
+main1/fast:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/build
+.PHONY : main1/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -135,6 +148,19 @@ main: cmake_check_build_system
 main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named Resource2
+
+# Build rule for target.
+Resource2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Resource2
+.PHONY : Resource2
+
+# fast build rule for target.
+Resource2/fast:
+	$(MAKE) -f CMakeFiles/Resource2.dir/build.make CMakeFiles/Resource2.dir/build
+.PHONY : Resource2/fast
 
 #=============================================================================
 # Target rules for targets named Resource
@@ -176,6 +202,33 @@ Resource.cpp.s:
 	$(MAKE) -f CMakeFiles/Resource.dir/build.make CMakeFiles/Resource.dir/Resource.cpp.s
 .PHONY : Resource.cpp.s
 
+Resource2.o: Resource2.cpp.o
+
+.PHONY : Resource2.o
+
+# target to build an object file
+Resource2.cpp.o:
+	$(MAKE) -f CMakeFiles/Resource2.dir/build.make CMakeFiles/Resource2.dir/Resource2.cpp.o
+.PHONY : Resource2.cpp.o
+
+Resource2.i: Resource2.cpp.i
+
+.PHONY : Resource2.i
+
+# target to preprocess a source file
+Resource2.cpp.i:
+	$(MAKE) -f CMakeFiles/Resource2.dir/build.make CMakeFiles/Resource2.dir/Resource2.cpp.i
+.PHONY : Resource2.cpp.i
+
+Resource2.s: Resource2.cpp.s
+
+.PHONY : Resource2.s
+
+# target to generate assembly for a file
+Resource2.cpp.s:
+	$(MAKE) -f CMakeFiles/Resource2.dir/build.make CMakeFiles/Resource2.dir/Resource2.cpp.s
+.PHONY : Resource2.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -202,6 +255,33 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+main1.o: main1.cpp.o
+
+.PHONY : main1.o
+
+# target to build an object file
+main1.cpp.o:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/main1.cpp.o
+.PHONY : main1.cpp.o
+
+main1.i: main1.cpp.i
+
+.PHONY : main1.i
+
+# target to preprocess a source file
+main1.cpp.i:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/main1.cpp.i
+.PHONY : main1.cpp.i
+
+main1.s: main1.cpp.s
+
+.PHONY : main1.s
+
+# target to generate assembly for a file
+main1.cpp.s:
+	$(MAKE) -f CMakeFiles/main1.dir/build.make CMakeFiles/main1.dir/main1.cpp.s
+.PHONY : main1.cpp.s
 
 main2.o: main2.cpp.o
 
@@ -236,17 +316,25 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main2"
+	@echo "... main1"
 	@echo "... main"
+	@echo "... rebuild_cache"
+	@echo "... Resource2"
 	@echo "... Resource"
 	@echo "... Resource.o"
 	@echo "... Resource.i"
 	@echo "... Resource.s"
+	@echo "... Resource2.o"
+	@echo "... Resource2.i"
+	@echo "... Resource2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main1.o"
+	@echo "... main1.i"
+	@echo "... main1.s"
 	@echo "... main2.o"
 	@echo "... main2.i"
 	@echo "... main2.s"

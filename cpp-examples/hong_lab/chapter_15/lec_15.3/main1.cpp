@@ -1,11 +1,12 @@
 #include <iostream>
 #include "include/Timer.h"
-#include "include/Resource2.h"
-#include "include/AutoPtr2.h"   // move constructor 와 move assignment 구현
+#include "include/Resource.h"
+#include "include/AutoPtr.h"   // copy constructor 와 copy assignment 구현
+
 
 AutoPtr<Resource> generateResource()
 {
-    AutoPtr<Resource> res(new Resource(10000));
+    AutoPtr<Resource> res(new Resource(10000)); //100000 부터는 Segmentation fault (core dumped) 에러 발생
     return res;
 }
 
@@ -27,3 +28,4 @@ int main()
     timer.elapsed();
     return 0;
 }
+

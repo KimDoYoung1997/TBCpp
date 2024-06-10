@@ -79,7 +79,7 @@ main2_EXTERNAL_OBJECTS =
 
 main2: CMakeFiles/main2.dir/main2.cpp.o
 main2: CMakeFiles/main2.dir/build.make
-main2: libResource.a
+main2: libResource2.a
 main2: CMakeFiles/main2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main2.dir/link.txt --verbose=$(VERBOSE)
