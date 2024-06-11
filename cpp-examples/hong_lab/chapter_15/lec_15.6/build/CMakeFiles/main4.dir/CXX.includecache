@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.6/include/Resource.h
+iostream
+-
+
+/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.6/main4.cpp
+iostream
+-
+memory
+-
+include/Resource.h
+/home/keti/cpp_ws/TBCpp/cpp-examples/hong_lab/chapter_15/lec_15.6/include/Resource.h
+
