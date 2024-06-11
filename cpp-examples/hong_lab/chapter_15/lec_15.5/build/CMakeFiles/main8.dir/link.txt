@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/main8.dir/main8.cpp.o  -o main8  libResource.a 

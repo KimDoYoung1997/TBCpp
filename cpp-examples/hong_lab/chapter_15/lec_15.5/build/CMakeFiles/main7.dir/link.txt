@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/main7.dir/main7.cpp.o  -o main7  libResource.a 
