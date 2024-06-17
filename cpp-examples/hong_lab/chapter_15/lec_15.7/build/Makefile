@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named main3
+
+# Build rule for target.
+main3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main3
+.PHONY : main3
+
+# fast build rule for target.
+main3/fast:
+	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/build
+.PHONY : main3/fast
+
+#=============================================================================
+# Target rules for targets named main2
+
+# Build rule for target.
+main2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main2
+.PHONY : main2
+
+# fast build rule for target.
+main2/fast:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
+.PHONY : main2/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -150,6 +176,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+main2.o: main2.cpp.o
+
+.PHONY : main2.o
+
+# target to build an object file
+main2.cpp.o:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.o
+.PHONY : main2.cpp.o
+
+main2.i: main2.cpp.i
+
+.PHONY : main2.i
+
+# target to preprocess a source file
+main2.cpp.i:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.i
+.PHONY : main2.cpp.i
+
+main2.s: main2.cpp.s
+
+.PHONY : main2.s
+
+# target to generate assembly for a file
+main2.cpp.s:
+	$(MAKE) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.s
+.PHONY : main2.cpp.s
+
+main3.o: main3.cpp.o
+
+.PHONY : main3.o
+
+# target to build an object file
+main3.cpp.o:
+	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main3.cpp.o
+.PHONY : main3.cpp.o
+
+main3.i: main3.cpp.i
+
+.PHONY : main3.i
+
+# target to preprocess a source file
+main3.cpp.i:
+	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main3.cpp.i
+.PHONY : main3.cpp.i
+
+main3.s: main3.cpp.s
+
+.PHONY : main3.s
+
+# target to generate assembly for a file
+main3.cpp.s:
+	$(MAKE) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main3.cpp.s
+.PHONY : main3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -158,10 +238,18 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... main3"
+	@echo "... main2"
 	@echo "... main"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main2.o"
+	@echo "... main2.i"
+	@echo "... main2.s"
+	@echo "... main3.o"
+	@echo "... main3.i"
+	@echo "... main3.s"
 .PHONY : help
 
 

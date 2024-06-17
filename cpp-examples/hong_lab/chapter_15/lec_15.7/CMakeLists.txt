@@ -18,6 +18,9 @@ message(STATUS "CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
 
 # 실행 파일과 라이브러리를 추가합니다.
 add_executable(main main.cpp)
+add_executable(main2 main2.cpp)
+add_executable(main3 main3.cpp)
+
 # add_executable(main2 main2.cpp)
 # add_executable(main3 main3.cpp)
 # add_executable(main4 main4.cpp)
@@ -27,7 +30,7 @@ add_executable(main main.cpp)
 # add_executable(main8 main8.cpp)
 
 # # # 타겟 리스트를 만듭니다.
-set(TARGETS1 main)
+set(TARGETS1 main main2 main3)
 # set(TARGETS1 main main2 main3 main4 main5 main6 main7 main8)
 # # set(TARGETS2 main2)
 

@@ -48,7 +48,7 @@ int main()
     auto person1 = std::make_shared<Person>("doyoung");
     auto person2 = std::make_shared<Person>("jingu");
 
-    // Person::partnerUp(person1, person2);
+    Person::partnerUp(person1, person2);    // 순환참조 에러
     std::cout <<"code end" <<std::endl;
 
     // std::cout<<person1->getPartner()->
