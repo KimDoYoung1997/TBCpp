@@ -90,8 +90,10 @@ int main()
 
         std::function<void(const std::string)> func5 = goodbye;
         func5("sad");
-
+        std::function<void()> func6 = std::bind(goodbye,"happy");
+        func6();
     }
+
 
     {
         Object instance;
