@@ -6,7 +6,7 @@
 #include <mutex>
 std::mutex mtx; // mutual exclusion
 
-
+// main3는 동기처리, main4 는 비동기 처리. 여기에 추가로 vector 와 for 를 이용해서 구조화 해봄
 int main()
 {
     const int num_pro = std::thread::hardware_concurrency();

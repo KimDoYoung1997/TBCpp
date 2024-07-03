@@ -5,6 +5,7 @@
 #include <vector>
 #include <mutex>
 
+// 비동기 처리가 아닌, 동기 처리 예제. main5와 비교해보기 위해 만듬
 
 int main()
 {

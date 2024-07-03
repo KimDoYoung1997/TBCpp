@@ -7,6 +7,9 @@
 
 std::mutex mtx; // mutual exclusion
 
+// main3과 비교하기 위해 만든 예제. main3은 동기지만 main5는 비동기
+// 여기에 mutex의 lock과 unlock으로 cout이 race되는걸 방지해줌.
+
 int main()
 {
     const int num_pro = std::thread::hardware_concurrency();

@@ -5,6 +5,7 @@
 #include <vector>
 #include <mutex>
 
+// main.cpp을 vector 로 쫌더 구조화? 있게 바꿨다 생각하면 됨.
 
 int main()
 {
