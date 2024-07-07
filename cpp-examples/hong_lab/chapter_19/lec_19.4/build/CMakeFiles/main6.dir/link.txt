@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main6.dir/main6.cpp.o -o main6 
