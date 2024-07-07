@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(lec_19.3)
+project(lec_19.4)
 # # C++17 표준 사용 설정
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
