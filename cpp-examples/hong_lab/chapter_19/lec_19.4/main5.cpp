@@ -9,7 +9,7 @@
 std::mutex mtx;
 int main()
 {
-    // 여러 thread 가 공유하는 자원(변수)를 atomic으로 wrapping
+    // 이번엔 mutex를 써보자
     int shared_memory(0);
 
 
