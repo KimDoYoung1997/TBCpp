@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main6.dir/main6.cpp.o -o main6  /usr/lib/x86_64-linux-gnu/libtbb.so.12.5 

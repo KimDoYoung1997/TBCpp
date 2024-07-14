@@ -33,7 +33,7 @@ void dotProductNaive(const std::vector<int>&v0,
     for(unsigned i=i_start;i<i_end;++i)
     {
         std::lock_guard<std::mutex> lock(mtx);
-        sum+=v0[i]*v1[i];
+        sum+=v0[i]*v1[i];       // 4개의 thread에서 하나의 sum이라는 변수를 공유하므로, lock_guard를 사용해줘야 한다. 이에 따른 병목현상으로 delay가 되는점을 주의깊게 살펴보자.
     }
 
 }
@@ -86,13 +86,13 @@ int main()
         const auto sta = std::chrono::steady_clock::now();
         unsigned long long sum = 0;
         std::vector<std::thread> threads;
-        threads.resize(n_threads);
+        threads.resize(n_threads);  // n_threads == 4
 
-        const unsigned n_per_thread = n_data / n_threads; // 100'000'000 / 4 ,assumes remainder = 0
+        const unsigned n_per_thread = n_data / n_threads; // 100'000'000 / 4 == 2500만, assumes remainder = 0
         for(unsigned t=0; t<n_threads;++t)
         {
             // threads[t]=std::thread(dotProductNaive);
-            threads[t]=std::thread(dotProductNaive,std::ref(v0),std::ref(v1),t*n_per_thread,(t+1)*n_per_thread,std::ref(sum));
+            threads[t]=std::thread(dotProductNaive,std::ref(v0),std::ref(v1),t*n_per_thread,(t+1)*n_per_thread,std::ref(sum));  // std::thread를 사용할 때 함수 인자를 참조로 전달하려면 std::ref를 사용해야 합니다. 그렇지 않으면 인자가 복사됩니다
 
 
         }

@@ -5,6 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 # 경로를 출력합니다.
 message(STATUS "CMAKE_SOURCE_DIR: ${CMAKE_SOURCE_DIR}")
+find_package(TBB REQUIRED)
 
 # include 디렉토리 경로 설정
 # set(INCLUDE_DIR "${CMAKE_SOURCE_DIR}/include")
@@ -24,16 +25,18 @@ add_executable(main_y main_y.cpp)
 add_executable(main3 main3.cpp)
 add_executable(main4 main4.cpp)
 add_executable(main5 main5.cpp)
+add_executable(main6 main6.cpp)
+add_executable(main7 main7.cpp)
+
+add_executable(example1 example1.cpp)
 
 # add_executable(main2 main2.cpp)
 # add_executable(main3 main3.cpp)
 # add_executable(main4 main4.cpp)
 # add_executable(main5 main5.cpp)
-# add_executable(main6 main6.cpp)
-# add_executable(main7 main7.cpp)
 
 # # # 타겟 리스트를 만듭니다.
-set(TARGETS1 main main2 main3 main4)
+set(TARGETS1 main main2 main3 main4 main5 main6 main7 main_x main_y example1)
 # set(TARGETS1 main main2 main3 main4 main5 main6 main7 main8)
 # # set(TARGETS2 main2)
 
@@ -42,6 +45,8 @@ foreach(TARGET ${TARGETS1})
     message(STATUS "TARGET1 file : ${TARGET}")
     # target_include_directories(${TARGET} PRIVATE ${INCLUDE_DIR})
     # target_link_libraries(${TARGET} PRIVATE Resource)
+    target_link_libraries(${TARGET} PRIVATE TBB::tbb)
+
 endforeach()
 # # target_link_libraries(main2 PRIVATE MySwap)
 # # foreach(TARGET ${TARGETS2})

@@ -8,6 +8,7 @@ void add_numbers(std::vector<int>& vec, int start, int end) {
     for (int i = start; i < end; ++i) {
         vec.emplace_back(i);
     }
+    std::cout<<"temp_vector size : "<<vec.size()<<std::endl;
 }
 
 int main() {
