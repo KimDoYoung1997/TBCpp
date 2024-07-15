@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.6/example1.cpp" "CMakeFiles/example1.dir/example1.cpp.o" "gcc" "CMakeFiles/example1.dir/example1.cpp.o.d"
+  "/home/keti/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.6/example1.cpp" "CMakeFiles/example1.dir/example1.cpp.o" "gcc" "CMakeFiles/example1.dir/example1.cpp.o.d"
   )
 
 # Targets to which this target links.
