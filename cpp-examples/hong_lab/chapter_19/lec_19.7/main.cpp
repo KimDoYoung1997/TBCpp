@@ -30,8 +30,8 @@ int main()
 {
     std::cout<<"일반 함수 에서는 L-value와 R-value를 구분하여 오버로딩한다. "<<std::endl;
     MyStruct s;
-    func(s);
-    func(MyStruct());
+    func(s);            // L-value 전달
+    func(MyStruct());   // R-value 전달
     std::cout<<"Template에서는 L-value와 R-value를 구분하지 않는다. "<<std::endl;
     func_wrapper(s);
     func_wrapper(MyStruct());
