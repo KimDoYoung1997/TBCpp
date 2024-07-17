@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7
+CMAKE_SOURCE_DIR = /home/keti/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7/build
+CMAKE_BINARY_DIR = /home/keti/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7/build/CMakeFiles /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7/build/CMakeFiles /home/keti/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/cpp-workspace/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/keti/TBCpp/cpp-examples/hong_lab/chapter_19/lec_19.7/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,71 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+#=============================================================================
+# Target rules for targets named main2
+
+# Build rule for target.
+main2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main2
+.PHONY : main2
+
+# fast build rule for target.
+main2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/build
+.PHONY : main2/fast
+
+#=============================================================================
+# Target rules for targets named main3
+
+# Build rule for target.
+main3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main3
+.PHONY : main3
+
+# fast build rule for target.
+main3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/build
+.PHONY : main3/fast
+
+#=============================================================================
+# Target rules for targets named main4
+
+# Build rule for target.
+main4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main4
+.PHONY : main4
+
+# fast build rule for target.
+main4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/build
+.PHONY : main4/fast
+
+#=============================================================================
+# Target rules for targets named main5
+
+# Build rule for target.
+main5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main5
+.PHONY : main5
+
+# fast build rule for target.
+main5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/build
+.PHONY : main5/fast
+
+#=============================================================================
+# Target rules for targets named main6
+
+# Build rule for target.
+main6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main6
+.PHONY : main6
+
+# fast build rule for target.
+main6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main6.dir/build.make CMakeFiles/main6.dir/build
+.PHONY : main6/fast
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -153,6 +218,126 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+main2.o: main2.cpp.o
+.PHONY : main2.o
+
+# target to build an object file
+main2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.o
+.PHONY : main2.cpp.o
+
+main2.i: main2.cpp.i
+.PHONY : main2.i
+
+# target to preprocess a source file
+main2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.i
+.PHONY : main2.cpp.i
+
+main2.s: main2.cpp.s
+.PHONY : main2.s
+
+# target to generate assembly for a file
+main2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main2.dir/build.make CMakeFiles/main2.dir/main2.cpp.s
+.PHONY : main2.cpp.s
+
+main3.o: main3.cpp.o
+.PHONY : main3.o
+
+# target to build an object file
+main3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main3.cpp.o
+.PHONY : main3.cpp.o
+
+main3.i: main3.cpp.i
+.PHONY : main3.i
+
+# target to preprocess a source file
+main3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main3.cpp.i
+.PHONY : main3.cpp.i
+
+main3.s: main3.cpp.s
+.PHONY : main3.s
+
+# target to generate assembly for a file
+main3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main3.dir/build.make CMakeFiles/main3.dir/main3.cpp.s
+.PHONY : main3.cpp.s
+
+main4.o: main4.cpp.o
+.PHONY : main4.o
+
+# target to build an object file
+main4.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/main4.cpp.o
+.PHONY : main4.cpp.o
+
+main4.i: main4.cpp.i
+.PHONY : main4.i
+
+# target to preprocess a source file
+main4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/main4.cpp.i
+.PHONY : main4.cpp.i
+
+main4.s: main4.cpp.s
+.PHONY : main4.s
+
+# target to generate assembly for a file
+main4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main4.dir/build.make CMakeFiles/main4.dir/main4.cpp.s
+.PHONY : main4.cpp.s
+
+main5.o: main5.cpp.o
+.PHONY : main5.o
+
+# target to build an object file
+main5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/main5.cpp.o
+.PHONY : main5.cpp.o
+
+main5.i: main5.cpp.i
+.PHONY : main5.i
+
+# target to preprocess a source file
+main5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/main5.cpp.i
+.PHONY : main5.cpp.i
+
+main5.s: main5.cpp.s
+.PHONY : main5.s
+
+# target to generate assembly for a file
+main5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main5.dir/build.make CMakeFiles/main5.dir/main5.cpp.s
+.PHONY : main5.cpp.s
+
+main6.o: main6.cpp.o
+.PHONY : main6.o
+
+# target to build an object file
+main6.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main6.dir/build.make CMakeFiles/main6.dir/main6.cpp.o
+.PHONY : main6.cpp.o
+
+main6.i: main6.cpp.i
+.PHONY : main6.i
+
+# target to preprocess a source file
+main6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main6.dir/build.make CMakeFiles/main6.dir/main6.cpp.i
+.PHONY : main6.cpp.i
+
+main6.s: main6.cpp.s
+.PHONY : main6.s
+
+# target to generate assembly for a file
+main6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main6.dir/build.make CMakeFiles/main6.dir/main6.cpp.s
+.PHONY : main6.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +347,29 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... main2"
+	@echo "... main3"
+	@echo "... main4"
+	@echo "... main5"
+	@echo "... main6"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main2.o"
+	@echo "... main2.i"
+	@echo "... main2.s"
+	@echo "... main3.o"
+	@echo "... main3.i"
+	@echo "... main3.s"
+	@echo "... main4.o"
+	@echo "... main4.i"
+	@echo "... main4.s"
+	@echo "... main5.o"
+	@echo "... main5.i"
+	@echo "... main5.s"
+	@echo "... main6.o"
+	@echo "... main6.i"
+	@echo "... main6.s"
 .PHONY : help
 
 
