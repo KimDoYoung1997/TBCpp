@@ -97,11 +97,57 @@ public:
 
 
     template<typename T,typename S>                 // decltype 은 auto로 생긴 모호한 return type을 정의하는 곳에서도 사용 가능하다. 
+    // decltype(lhs*rhs) func_ex8(T lhs, S rhs) -> decltype(lhs*rhs)    // 이렇게 하는 방법도 있지 않나 싶은데 결과적으로 안 된다고 함.
     auto func_ex8(T lhs, S rhs) ->decltype(lhs*rhs)
     {
         return lhs*rhs;
     }    
 
+    struct S
+    {
+        int m_x;
+        S()
+        {
+            m_x = 42;
+        }
+    };
+
+    void ex9()
+    {
+        int x;
+        const int cx =42;
+        const int& crx = x;
+        const S *p = new S();
+
+        auto a = x;
+        auto b = cx;
+        b+=1;
+        auto c = crx;
+        c=c+1;
+        auto d = p;
+        std::cout<<"d->m_x "<<d->m_x<<std::endl;
+        auto e = p->m_x;
+        e=e+1;
+        delete p;
+
+        typedef decltype(x) x_type;
+        typedef decltype(cx) cx_type;
+        typedef decltype(crx) crx_type;
+        typedef decltype(p->m_x) m_x_type;
+        typedef decltype((x)) x_with_parents_type;
+        typedef decltype((cx)) cx_type;
+        typedef decltype((crx)) crx_type;
+        typedef decltype((p->m_x)) m_x_type;
+
+        std::cout<<typeid(x_type).name()<<std::endl;
+        std::cout<<typeid(cx_type).name()<<std::endl;
+        std::cout<<typeid(crx_type).name()<<std::endl;
+        std::cout<<typeid(m_x_type).name()<<std::endl;
+        std::cout<<typeid(x_with_parents_type).name()<<std::endl;
+        // std::cout<<typeid(x_type).name()<<std::endl;
+
+
+    }
 };
 
 
@@ -113,5 +159,11 @@ int main()
     example1.ex3();
     example1.func_ex7(8,8.0);
     std::cout<<example1.func_ex8(8, 8)<<" "<<typeid(decltype(example1.func_ex8(8, 8))).name()<<std::endl;;
+    std::cout<<example1.func_ex8(8, 8.0)<<" "<<typeid(decltype(example1.func_ex8(8, 8.0))).name()<<std::endl;;
+
+    Examples::S s_instance;
+    std::cout << "S instance m_x: " << s_instance.m_x << std::endl;
+
+    example1.ex9();
     return 0;
 }
